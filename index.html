@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">The freeCodeCamp Survey</h1>
+    <p id="description">
+      Thank you for taking the time to help us improve the platform!
+    </p>
+
+    <form id="survey-form">
+      <input
+        id="name"
+        type="text"
+        required
+        placeholder="e.g., Joe Dirt"
+      />
+      <label id="name-label">Name (required):</label>
+
+      <input
+        id="email"
+        input
+        type="email"
+        required
+        placeholder="example@email.com"
+      />
+      <label id="email-label">Email (required):</label>
+
+      <input
+        id="number"
+        type="number"
+        min="1"
+        max="999999999"
+        placeholder="5555555"
+      />
+      <label id="number-label">Number</label>
+      <br />
+
+      <fieldset>
+        <legend>What is your current role?</legend>
+        <select id="dropdown">
+          <option value="unemployed">Unemployed</option>
+          <option value="student">Student</option>
+          <option value="swe">Software Engineer</option>
+          <option value="another-field">Another Field</option>
+        </select>
+        <br />
+      </fieldset>
+      <br />
+
+      <fieldset>
+        <p id="coding">Do you feel confident in your coding skills?</p>
+
+        <label for="radio-yes">
+          <input
+            type="radio"
+            name="coding"
+            value="coding"
+            class="inline"
+          />Yes
+        </label>
+
+        <label for="radio-no">
+          <input
+            type="radio"
+            name="coding"
+            value="coding"
+            class="inline"
+          />No
+        </label>
+
+        <label for="radio-maybe">
+          <input
+            type="radio"
+            name="coding"
+            value="coding"
+            class="inline"
+          />Maybe
+        </label>
+      </fieldset>
+      <br />
+
+      <fieldset>
+        <p id="programming-lang">What programming language do you know?</p>
+
+        <input type="checkbox" value="programming-lang" id="programming-lang" />
+        Python
+
+        <input type="checkbox" value="programming-lang" id="programming-lang" />
+        Java
+
+        <input type="checkbox" value="programming-lang" id="programming-lang" />
+        JavaScript
+
+        <input type="checkbox" value="programming-lang" id="programming-lang" />
+        SQL
+      </fieldset>
+      <br />
+
+      <label for="comments">Other comments:</label>
+      <textarea id="comments" name="comments" rows="4" cols="50">
+Enter your thoughts here...
+      </textarea>
+
+      <input id="submit" type="submit" />
+    </form>
+  </body>
+</html>
